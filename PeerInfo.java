@@ -2,44 +2,33 @@ import java.io.*;
 import java.util.*;
 
 public class PeerInfo {
-
     public int peerId;
-    public String host;
+    public String hostname;
     public int port;
     public boolean hasFile;
 
-    public PeerInfo(int peerId, String host, int port, boolean hasFile) {
+    public PeerInfo(int peerId, String hostname, int port, boolean hasFile) {
         this.peerId = peerId;
-        this.host = host;
+        this.hostname = hostname;
         this.port = port;
         this.hasFile = hasFile;
     }
 
-    public static List<PeerInfo> loadPeerInfo(String filename) {
-
+    public static List<PeerInfo> load(String path) throws IOException {
         List<PeerInfo> peers = new ArrayList<>();
-
-        try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
-
-            String line;
-
-            while ((line = reader.readLine()) != null) {
-
-                String[] parts = line.split(" ");
-
-                int peerId = Integer.parseInt(parts[0]);
-                String host = parts[1];
-                int port = Integer.parseInt(parts[2]);
-                boolean hasFile = parts[3].equals("1");
-
-                peers.add(new PeerInfo(peerId, host, port, hasFile));
-            }
-
-        } catch (IOException e) {
-            e.printStackTrace();
+        BufferedReader reader = new BufferedReader(new FileReader(path));
+        String line;
+        while ((line = reader.readLine()) != null) {
+            line = line.trim();
+            if (line.isEmpty()) continue;
+            String[] parts = line.split("\\s+");
+            int peerId = Integer.parseInt(parts[0]);
+            String hostname = parts[1];
+            int port = Integer.parseInt(parts[2]);
+            boolean hasFile = parts[3].equals("1");
+            peers.add(new PeerInfo(peerId, hostname, port, hasFile));
         }
-
+        reader.close();
         return peers;
     }
-
 }
