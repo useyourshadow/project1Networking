@@ -2,6 +2,8 @@
 
 Use **three terminals** (or IntelliJ + two terminals). Run everything from the **project root** (where `Common.cfg` and `PeerInfo.cfg` live).
 
+**Which config is used?** The program does *not* use `project_config_file_large` unless you run with that folder as the working directory. By default it reads `Common.cfg` and `PeerInfo.cfg` from the **current working directory** (project root = 3 peers, TheFile.dat, 306 pieces). To use the large test config, set IntelliJ’s run “Working directory” to `project_config_file_large`, or `cd` into that folder in the terminal before running `java PeerProcess <id>`.
+
 ---
 
 ## 1. Compile (if not using IntelliJ Build)
