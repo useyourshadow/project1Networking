@@ -41,6 +41,7 @@ public class ConnectionHandler {
         this.logger       = logger;
     }
 
+    public void setOutputStream(DataOutputStream out) {
         this.out = out;
     }
 

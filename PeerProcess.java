@@ -30,6 +30,9 @@ public class PeerProcess {
     private static P2PLogger logger;
     private static volatile boolean running = true;
 
+    /** Remote peer ID optimistically unchoked; preferred-neighbor pass must not re-choke them. */
+    private static volatile int optimisticPeerId = -1;
+
     public static void main(String[] args) {
         if (args.length < 1) {
             System.out.println("Usage: java PeerProcess <peerID>");
@@ -39,6 +42,7 @@ public class PeerProcess {
         int myPeerId = Integer.parseInt(args[0]);
         System.out.println("Starting peer " + myPeerId + "...");
 
+        ScheduledExecutorService scheduler = null;
         try {
             CommonConfig config = CommonConfig.load("Common.cfg");
             List<PeerInfo> allPeers = PeerInfo.load("PeerInfo.cfg");
@@ -145,47 +149,126 @@ public class PeerProcess {
 
             System.out.println("Peer " + myId + " startup complete.");
 
-            // ----------------------------------------------------------------
-            // TODO_PART_A: Start preferred-neighbor timer
-            //
-            // Every config.unchokingInterval seconds:
-            //   1. Collect all handlers where handler.isRemoteInterested() == true
-            //   2. If myBitfield.isComplete(): pick k random ones as preferred
-            //      Else: sort by handler.getDownloadRate() desc, pick top k
-            //            (break ties randomly)
-            //   3. For each connection:
-            //        if in preferred set AND handler.isChokingRemote() -> setChoked(false)
-            //        if NOT in preferred set AND NOT optimistically unchoked
-            //             AND NOT handler.isChokingRemote() -> setChoked(true)
-            //   4. Call handler.resetDownloadRate() on all handlers
-            //   5. logger.logPreferredNeighbors(List<Integer> ids)
-            //
-            // Use a ScheduledExecutorService:
-            //   ScheduledExecutorService scheduler =
-            //       Executors.newScheduledThreadPool(2);
-            //   scheduler.scheduleAtFixedRate(preferredNeighborTask,
-            //       config.unchokingInterval, config.unchokingInterval,
-            //       TimeUnit.SECONDS);
-            // ----------------------------------------------------------------
+            final int prefK = config.numberOfPreferredNeighbors;
+            Runnable preferredNeighborTask = () -> {
+                try {
+                    List<ConnectionHandler> all = new ArrayList<>();
+                    for (PeerConnectionThread pct : connections) {
+                        ConnectionHandler h = pct.getHandler();
+                        if (h != null) {
+                            all.add(h);
+                        }
+                    }
+                    List<ConnectionHandler> interested = new ArrayList<>();
+                    for (ConnectionHandler h : all) {
+                        if (h.isRemoteInterested()) {
+                            interested.add(h);
+                        }
+                    }
+                    int opt = optimisticPeerId;
+                    List<ConnectionHandler> preferredList = new ArrayList<>();
+                    if (!interested.isEmpty()) {
+                        int take = Math.min(prefK, interested.size());
+                        if (myBitfield.isComplete()) {
+                            Collections.shuffle(interested);
+                            preferredList.addAll(
+                                interested.subList(0, take));
+                        } else {
+                            Collections.shuffle(interested);
+                            interested.sort(Comparator.comparingLong(
+                                ConnectionHandler::getDownloadRate).reversed());
+                            preferredList.addAll(
+                                interested.subList(0, take));
+                        }
+                    }
+                    Set<Integer> preferredSet = new HashSet<>();
+                    List<Integer> preferredIds = new ArrayList<>();
+                    for (ConnectionHandler h : preferredList) {
+                        int rid = h.getRemotePeerId();
+                        preferredSet.add(rid);
+                        preferredIds.add(rid);
+                    }
+                    Collections.sort(preferredIds);
+                    for (ConnectionHandler h : all) {
+                        int rid = h.getRemotePeerId();
+                        boolean inPref = preferredSet.contains(rid);
+                        try {
+                            if (inPref && h.isChokingRemote()) {
+                                h.setChoked(false);
+                            } else if (!inPref && rid != opt
+                                && !h.isChokingRemote()) {
+                                h.setChoked(true);
+                            }
+                        } catch (IOException e) {
+                            System.out.println(
+                                "Choke/unchoke error for peer " + rid + ": "
+                                    + e.getMessage());
+                        }
+                    }
+                    for (ConnectionHandler h : all) {
+                        h.resetDownloadRate();
+                    }
+                    logger.logPreferredNeighbors(preferredIds);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            };
 
-            // ----------------------------------------------------------------
-            // TODO_PART_A: Start optimistic-unchoke timer
-            //
-            // Every config.optimisticUnchokingInterval seconds:
-            //   1. Find all handlers where:
-            //        handler.isRemoteInterested() == true
-            //        AND handler.isChokingRemote() == true   (they're choked)
-            //   2. Pick one randomly as the optimistically unchoked neighbor
-            //   3. handler.setChoked(false)  on the chosen one
-            //      (if they were already unchoked as a preferred neighbor, that's fine)
-            //   4. logger.logOptimisticallyUnchokedNeighbor(remotePeerId)
-            //   5. Remember which peer is currently optimistically unchoked so the
-            //      preferred-neighbor timer above doesn't re-choke them.
-            // ----------------------------------------------------------------
+            Runnable optimisticUnchokeTask = () -> {
+                try {
+                    List<ConnectionHandler> candidates = new ArrayList<>();
+                    for (PeerConnectionThread pct : connections) {
+                        ConnectionHandler h = pct.getHandler();
+                        if (h != null && h.isRemoteInterested()
+                            && h.isChokingRemote()) {
+                            candidates.add(h);
+                        }
+                    }
+                    if (candidates.isEmpty()) {
+                        return;
+                    }
+                    ConnectionHandler chosen = candidates.get(
+                        new Random().nextInt(candidates.size()));
+                    int rid = chosen.getRemotePeerId();
+                    try {
+                        chosen.setChoked(false);
+                    } catch (IOException e) {
+                        System.out.println(
+                            "Optimistic unchoke error for peer " + rid + ": "
+                                + e.getMessage());
+                        return;
+                    }
+                    optimisticPeerId = rid;
+                    logger.logOptimisticallyUnchokedNeighbor(rid);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            };
+
+            scheduler = Executors.newScheduledThreadPool(2);
+            scheduler.scheduleAtFixedRate(preferredNeighborTask,
+                config.unchokingInterval, config.unchokingInterval,
+                TimeUnit.SECONDS);
+            scheduler.scheduleAtFixedRate(optimisticUnchokeTask,
+                config.optimisticUnchokingInterval,
+                config.optimisticUnchokingInterval,
+                TimeUnit.SECONDS);
 
             // Main thread: just wait until shutdown signal.
             while (running) {
                 Thread.sleep(1000);
+            }
+
+            if (scheduler != null) {
+                scheduler.shutdown();
+                try {
+                    if (!scheduler.awaitTermination(10, TimeUnit.SECONDS)) {
+                        scheduler.shutdownNow();
+                    }
+                } catch (InterruptedException ie) {
+                    scheduler.shutdownNow();
+                    Thread.currentThread().interrupt();
+                }
             }
 
             fileManager.close();
