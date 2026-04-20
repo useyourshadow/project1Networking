@@ -2,6 +2,8 @@
 
 Use **three terminals** (or IntelliJ + two terminals). Run everything from the **project root** (where `Common.cfg` and `PeerInfo.cfg` live).
 
+**Which config is used?** The program does *not* use `project_config_file_large` unless you run with that folder as the working directory. By default it reads `Common.cfg` and `PeerInfo.cfg` from the **current working directory** (project root = 3 peers, TheFile.dat, 306 pieces). To use the large test config, set IntelliJ’s run “Working directory” to `project_config_file_large`, or `cd` into that folder in the terminal before running `java PeerProcess <id>`.
+
 ---
 
 ## 1. Compile (if not using IntelliJ Build)
@@ -30,7 +32,7 @@ Peer 1001 must start first (others connect to it). Start 1002 only after 1001 is
 
 ```bash
 cd /Users/kaimcfarlane/2026_SPRING_COURSES/CNT4007/CNT_4007_GitRepo/project1Networking
-java peerProcess 1001
+java PeerProcess 1001
 ```
 
 Wait until you see: `Peer 1001 listening on port 6008` and `Peer 1001 startup complete.`
@@ -39,14 +41,14 @@ Wait until you see: `Peer 1001 listening on port 6008` and `Peer 1001 startup co
 
 ```bash
 cd /Users/kaimcfarlane/2026_SPRING_COURSES/CNT4007/CNT_4007_GitRepo/project1Networking
-java peerProcess 1002
+java PeerProcess 1002
 ```
 
 **Terminal 3 — Peer 1003 (no file, listens 6010, connects to 1001 and 1002):**
 
 ```bash
 cd /Users/kaimcfarlane/2026_SPRING_COURSES/CNT4007/CNT_4007_GitRepo/project1Networking
-java peerProcess 1003
+java PeerProcess 1003
 ```
 
 ---
@@ -107,8 +109,8 @@ In each terminal: **Ctrl+C**. The main loop runs until you stop it; there is no 
 
 | Terminal | Command |
 |----------|--------|
-| 1 | `cd /Users/kaimcfarlane/2026_SPRING_COURSES/CNT4007/CNT_4007_GitRepo/project1Networking` then `java peerProcess 1001` |
-| 2 | Same `cd`, then `java peerProcess 1002` |
-| 3 | Same `cd`, then `java peerProcess 1003` |
+| 1 | `cd /Users/kaimcfarlane/2026_SPRING_COURSES/CNT4007/CNT_4007_GitRepo/project1Networking` then `java PeerProcess 1001` |
+| 2 | Same `cd`, then `java PeerProcess 1002` |
+| 3 | Same `cd`, then `java PeerProcess 1003` |
 
 Run 1001 first, wait for “startup complete”, then 1002, then 1003.
