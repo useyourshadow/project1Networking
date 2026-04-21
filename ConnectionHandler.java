@@ -52,6 +52,7 @@ public class ConnectionHandler {
     public synchronized void handleBitfield(byte[] unpackedData) throws IOException {
         neighborBitfield = new Bitfield(myBitfield.getPieces().length);
         neighborBitfield.fromByteArray(unpackedData);
+        PeerProcess.recordNeighborPieceCount(remotePeerId, neighborBitfield.countTruePieces());
         sendInterestDecision();
     }
 
@@ -82,7 +83,10 @@ public class ConnectionHandler {
 
     public synchronized void handleChoke() {
         amChokedByRemote = true;
-        pendingRequest = -1;
+        if (pendingRequest >= 0) {
+            PeerProcess.releaseInflightRequest(pendingRequest);
+            pendingRequest = -1;
+        }
         logger.logChokedBy(remotePeerId);
     }
 
@@ -92,11 +96,18 @@ public class ConnectionHandler {
         int pieceIndex = Util.bytesToInt(Arrays.copyOfRange(payload, 0, 4));
         byte[] pieceData = Arrays.copyOfRange(payload, 4, payload.length);
 
-        if (myBitfield.hasPiece(pieceIndex)) return;
+        if (myBitfield.hasPiece(pieceIndex)) {
+            if (pendingRequest == pieceIndex) {
+                PeerProcess.releaseInflightRequest(pieceIndex);
+                pendingRequest = -1;
+            }
+            return;
+        }
 
         fileManager.writePiece(pieceIndex, pieceData);
         myBitfield.setPiece(pieceIndex);
         bytesDownloadedThisInterval += pieceData.length;
+        PeerProcess.releaseInflightRequest(pieceIndex);
         pendingRequest = -1;
 
         int totalOwned = countOwnedPieces();
@@ -178,16 +189,22 @@ public class ConnectionHandler {
         List<Integer> candidates = new ArrayList<>();
         boolean[] mine = myBitfield.getPieces();
         for (int i = 0; i < mine.length; i++) {
-            if (!mine[i] && neighborBitfield.hasPiece(i) && i != pendingRequest) {
+            if (!mine[i] && neighborBitfield.hasPiece(i)
+                && !PeerProcess.isInflightRequestRegistered(i)) {
                 candidates.add(i);
             }
         }
 
         if (candidates.isEmpty()) return;
 
-        int chosen = candidates.get(new Random().nextInt(candidates.size()));
-        pendingRequest = chosen;
-        new Message(MessageType.REQUEST, Util.intToBytes(chosen)).send(out);
+        Collections.shuffle(candidates);
+        for (int chosen : candidates) {
+            if (PeerProcess.tryRegisterInflightRequest(chosen)) {
+                pendingRequest = chosen;
+                new Message(MessageType.REQUEST, Util.intToBytes(chosen)).send(out);
+                return;
+            }
+        }
     }
 
     private int countOwnedPieces() {

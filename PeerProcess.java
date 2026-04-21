@@ -3,14 +3,7 @@ import java.net.*;
 import java.util.*;
 import java.util.concurrent.*;
 
-/**
- * Main peer process.
- *
- * Part A hook points (marked TODO_PART_A):
- *   - Preferred-neighbor selection timer (every unchokingInterval seconds)
- *   - Optimistic-unchoke timer (every optimisticUnchokingInterval seconds)
- *   Both timers iterate over `connections` and call handler.setChoked(boolean).
- */
+/** Main peer process: mesh TCP, choking, termination when all peers complete the file. */
 public class PeerProcess {
 
     // Shared list of active connections — used for HAVE broadcast and Part A timers.
@@ -18,20 +11,23 @@ public class PeerProcess {
     private static final List<PeerConnectionThread> connections =
         new CopyOnWriteArrayList<>();
 
-    // Tracks how many pieces each peer owns (updated when we receive HAVE from them).
-    // Key: remotePeerId, Value: number of pieces that peer has reported having.
-    // Part A uses this to detect when all peers are done.
+    // Tracks how many pieces each neighbor is known to have (BITFIELD snapshot + HAVE increments).
     private static final Map<Integer, Integer> peerPieceCount =
         new ConcurrentHashMap<>();
 
+    /** Piece indices we have REQUEST in flight to any neighbor (spec: no duplicate requests). */
+    private static final Set<Integer> inflightPieceRequests =
+        ConcurrentHashMap.newKeySet();
+
     private static int totalNumPieces;
-    private static int totalPeers;         
     private static Bitfield myBitfield;
     private static P2PLogger logger;
     private static volatile boolean running = true;
 
     /** Remote peer ID optimistically unchoked; preferred-neighbor pass must not re-choke them. */
     private static volatile int optimisticPeerId = -1;
+
+    private static volatile ServerSocket listenSocket;
 
     public static void main(String[] args) {
         if (args.length < 1) {
@@ -47,7 +43,6 @@ public class PeerProcess {
             CommonConfig config = CommonConfig.load("Common.cfg");
             List<PeerInfo> allPeers = PeerInfo.load("PeerInfo.cfg");
             totalNumPieces = config.numPieces;
-            totalPeers     = allPeers.size();
 
             System.out.println("Config: " + config.numPieces + " pieces, "
                 + "fileSize=" + config.fileSize + ", pieceSize=" + config.pieceSize);
@@ -103,19 +98,29 @@ public class PeerProcess {
             };
 
             Thread serverThread = new Thread(() -> {
-                try (ServerSocket ss = new ServerSocket(myPeerInfo.port)) {
+                try {
+                    listenSocket = new ServerSocket(myPeerInfo.port);
                     System.out.println("Peer " + myId +
                         " listening on port " + myPeerInfo.port);
                     while (running) {
-                        Socket clientSocket = ss.accept();
-                        PeerConnectionThread pct = new PeerConnectionThread(
-                            clientSocket, myId, myBitfield, logger,
-                            config.numPieces, fileManager, pieceCallback);
-                        connections.add(pct);
-                        pct.start();
+                        try {
+                            Socket clientSocket = listenSocket.accept();
+                            PeerConnectionThread pct = new PeerConnectionThread(
+                                clientSocket, myId, myBitfield, logger,
+                                config.numPieces, fileManager, pieceCallback);
+                            connections.add(pct);
+                            pct.start();
+                        } catch (SocketException e) {
+                            if (!running) break;
+                            throw e;
+                        }
                     }
                 } catch (IOException e) {
                     if (running) e.printStackTrace();
+                } finally {
+                    if (listenSocket != null) {
+                        try { listenSocket.close(); } catch (IOException ignored) {}
+                    }
                 }
             });
             serverThread.setDaemon(true);
@@ -259,6 +264,8 @@ public class PeerProcess {
                 Thread.sleep(1000);
             }
 
+            shutdownNetworking();
+
             if (scheduler != null) {
                 scheduler.shutdown();
                 try {
@@ -286,32 +293,35 @@ public class PeerProcess {
 
     /**
      * Sends a HAVE message through the given connection thread.
-     * We access the socket's output stream via the thread's handler.
-     *
-     * NOTE: ConnectionHandler.setChoked() is the model for how Part A sends
-     * control messages.  Here we add a public sendHave() to PeerConnectionThread
-     * for the HAVE broadcast.
      */
     private static void sendHave(PeerConnectionThread pct, byte[] havePayload)
             throws IOException {
         pct.sendHave(havePayload);
     }
 
-    /**
-     * Checks whether all known peers now have every piece.
-     * If so, shuts down.
-     *
-     * This is a simple approximation: we know our own count, and we update
-     * peerPieceCount when we receive HAVE messages — see TODO note below.
-     *
-     * TODO_PART_A / PART_B integration:
-     *   When PeerConnectionThread receives a HAVE message from a remote peer,
-     *   it should also call:
-     *     PeerProcess.recordHaveFromPeer(remotePeerId);
-     *   so we can track remote progress toward termination.
-     *   Add a static method below and wire it into handleHave() in
-     *   PeerConnectionThread (after calling handler.handleHave()).
-     */
+    public static boolean isRunning() {
+        return running;
+    }
+
+    /** After a BITFIELD, set known piece count for that neighbor (covers seed peers with no per-piece HAVE). */
+    public static void recordNeighborPieceCount(int remotePeerId, int piecesKnown) {
+        peerPieceCount.put(remotePeerId, piecesKnown);
+        checkAllDone();
+    }
+
+    public static boolean isInflightRequestRegistered(int pieceIndex) {
+        return inflightPieceRequests.contains(pieceIndex);
+    }
+
+    /** True if this piece was not yet registered (caller will send REQUEST next). */
+    public static boolean tryRegisterInflightRequest(int pieceIndex) {
+        return inflightPieceRequests.add(pieceIndex);
+    }
+
+    public static void releaseInflightRequest(int pieceIndex) {
+        inflightPieceRequests.remove(pieceIndex);
+    }
+
     private static void checkAllDone() {
         for (Map.Entry<Integer, Integer> entry : peerPieceCount.entrySet()) {
             if (entry.getValue() < totalNumPieces) return;
@@ -321,11 +331,29 @@ public class PeerProcess {
     }
 
     /**
-     * Called from PeerConnectionThread whenever it receives a HAVE from a remote peer.
-     * Increments that peer's piece count; triggers shutdown if everyone is done.
+     * Called when we receive a HAVE from a remote peer (new piece acquired by them).
      */
     public static void recordHaveFromPeer(int remotePeerId) {
         peerPieceCount.merge(remotePeerId, 1, Integer::sum);
         checkAllDone();
+    }
+
+    private static void shutdownNetworking() {
+        if (listenSocket != null && !listenSocket.isClosed()) {
+            try {
+                listenSocket.close();
+            } catch (IOException ignored) {}
+        }
+        for (PeerConnectionThread pct : connections) {
+            pct.closeSocket();
+        }
+        for (PeerConnectionThread pct : connections) {
+            try {
+                pct.join(5000);
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+                break;
+            }
+        }
     }
 }

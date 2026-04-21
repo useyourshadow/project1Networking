@@ -51,6 +51,15 @@ public class PeerConnectionThread extends Thread {
 
     public ConnectionHandler getHandler() { return handler; }
 
+    /** Unblocks {@link Message#receive} so the peer thread can exit on shutdown. */
+    public void closeSocket() {
+        try {
+            if (socket != null && !socket.isClosed()) {
+                socket.close();
+            }
+        } catch (IOException ignored) {}
+    }
+
     public void sendHave(byte[] havePayload) throws IOException {
         if (out != null) {
             new Message(MessageType.HAVE, havePayload).send(out);
@@ -72,7 +81,7 @@ public class PeerConnectionThread extends Thread {
 
             sendBitfieldIfNeeded();
 
-            while (true) {
+            while (PeerProcess.isRunning()) {
                 Message msg = Message.receive(in);
                 handleMessage(msg);
             }
