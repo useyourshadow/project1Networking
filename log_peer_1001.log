@@ -1,331 +1,371 @@
-2026-04-20 20:12:13: Peer 1001 has the preferred neighbors .
-2026-04-20 20:12:18: Peer 1001 has the preferred neighbors .
-2026-04-20 20:12:19: Peer 1001 is connected from Peer 1002.
-2026-04-20 20:12:19: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 has the preferred neighbors 1002.
-2026-04-20 20:12:23: Peer 1001 has the optimistically unchoked neighbor 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 6.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 25.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 11.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 53.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 33.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 16.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 66.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 79.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 10.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 30.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 20.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 76.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 13.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 37.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 14.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 77.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 40.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 26.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 47.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 42.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 48.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 8.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 49.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 15.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 31.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 38.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 5.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 61.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 44.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 59.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 50.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 23.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 51.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 19.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 12.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 27.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 3.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 78.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 55.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 57.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 70.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 32.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 9.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 74.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 52.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 43.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 28.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 4.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 69.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 56.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 17.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 21.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 39.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 65.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 35.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 41.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 1.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 46.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 64.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 36.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 29.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 60.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 45.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 62.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 18.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 0.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 54.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 67.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 22.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 68.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 34.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 7.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 63.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 72.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 73.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 58.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 71.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 75.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 24.
-2026-04-20 20:12:23: Peer 1001 received the 'interested' message from 1002.
-2026-04-20 20:12:23: Peer 1001 received the 'have' message from 1002 for the piece 2.
-2026-04-20 20:12:23: Peer 1001 received the 'not interested' message from 1002.
-2026-04-20 20:12:28: Peer 1001 has the preferred neighbors .
-2026-04-20 20:12:29: Peer 1001 is connected from Peer 1003.
-2026-04-20 20:12:29: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 has the preferred neighbors 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 61.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 68.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 39.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 15.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 43.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 17.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 69.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 59.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 5.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 41.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 4.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 45.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 63.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 30.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 53.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 70.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 58.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 32.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 3.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 31.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 13.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 49.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 40.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 0.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 9.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 73.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 55.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 74.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 57.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 50.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 44.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 33.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 79.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 21.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 71.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 12.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 76.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 1.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 7.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 20.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 10.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 11.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 47.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 48.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 14.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 6.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 65.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 29.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 22.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 77.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 66.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 64.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 23.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 27.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 75.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 2.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 78.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 38.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 46.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 60.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 51.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 42.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 52.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 56.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 8.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 37.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 24.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 19.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 16.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 67.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 72.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 18.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 34.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 25.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 28.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 62.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 36.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 26.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 54.
-2026-04-20 20:12:33: Peer 1001 received the 'interested' message from 1003.
-2026-04-20 20:12:33: Peer 1001 received the 'have' message from 1003 for the piece 35.
-2026-04-20 20:12:33: Peer 1001 received the 'not interested' message from 1003.
-2026-04-20 20:12:38: Peer 1001 has the preferred neighbors .
+2026-04-20 21:12:31: Peer 1001 has the preferred neighbors .
+2026-04-20 21:12:36: Peer 1001 has the preferred neighbors .
+2026-04-20 21:12:39: Peer 1001 is connected from Peer 1002.
+2026-04-20 21:12:39: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:41: Peer 1001 has the preferred neighbors 1002.
+2026-04-20 21:12:41: Peer 1001 has the optimistically unchoked neighbor 1002.
+2026-04-20 21:12:41: Peer 1001 received the 'have' message from 1002 for the piece 24.
+2026-04-20 21:12:41: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:41: Peer 1001 received the 'have' message from 1002 for the piece 46.
+2026-04-20 21:12:41: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:41: Peer 1001 received the 'have' message from 1002 for the piece 49.
+2026-04-20 21:12:41: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:41: Peer 1001 received the 'have' message from 1002 for the piece 75.
+2026-04-20 21:12:41: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:41: Peer 1001 received the 'have' message from 1002 for the piece 13.
+2026-04-20 21:12:41: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:41: Peer 1001 received the 'have' message from 1002 for the piece 50.
+2026-04-20 21:12:41: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:41: Peer 1001 received the 'have' message from 1002 for the piece 42.
+2026-04-20 21:12:41: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:41: Peer 1001 received the 'have' message from 1002 for the piece 28.
+2026-04-20 21:12:41: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:41: Peer 1001 received the 'have' message from 1002 for the piece 9.
+2026-04-20 21:12:41: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:41: Peer 1001 received the 'have' message from 1002 for the piece 29.
+2026-04-20 21:12:41: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:41: Peer 1001 received the 'have' message from 1002 for the piece 7.
+2026-04-20 21:12:41: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:41: Peer 1001 received the 'have' message from 1002 for the piece 36.
+2026-04-20 21:12:41: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:41: Peer 1001 received the 'have' message from 1002 for the piece 4.
+2026-04-20 21:12:41: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:41: Peer 1001 received the 'have' message from 1002 for the piece 68.
+2026-04-20 21:12:41: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:41: Peer 1001 received the 'have' message from 1002 for the piece 56.
+2026-04-20 21:12:41: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:41: Peer 1001 received the 'have' message from 1002 for the piece 77.
+2026-04-20 21:12:41: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:41: Peer 1001 received the 'have' message from 1002 for the piece 23.
+2026-04-20 21:12:41: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:41: Peer 1001 received the 'have' message from 1002 for the piece 34.
+2026-04-20 21:12:41: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:41: Peer 1001 received the 'have' message from 1002 for the piece 18.
+2026-04-20 21:12:41: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:41: Peer 1001 received the 'have' message from 1002 for the piece 3.
+2026-04-20 21:12:41: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:41: Peer 1001 received the 'have' message from 1002 for the piece 44.
+2026-04-20 21:12:41: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:41: Peer 1001 received the 'have' message from 1002 for the piece 10.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 11.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 54.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 12.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 0.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 35.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 5.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 41.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 40.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 51.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 79.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 33.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 48.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 32.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 38.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 27.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 39.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 17.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 69.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 78.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 6.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 25.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 70.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 21.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 74.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 65.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 52.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 73.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 53.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 47.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 1.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 16.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 61.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 45.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 15.
+2026-04-20 21:12:42: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:42: Peer 1001 received the 'have' message from 1002 for the piece 20.
+2026-04-20 21:12:43: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:43: Peer 1001 received the 'have' message from 1002 for the piece 55.
+2026-04-20 21:12:43: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:43: Peer 1001 received the 'have' message from 1002 for the piece 30.
+2026-04-20 21:12:43: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:43: Peer 1001 received the 'have' message from 1002 for the piece 67.
+2026-04-20 21:12:43: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:43: Peer 1001 received the 'have' message from 1002 for the piece 58.
+2026-04-20 21:12:43: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:43: Peer 1001 received the 'have' message from 1002 for the piece 66.
+2026-04-20 21:12:43: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:43: Peer 1001 received the 'have' message from 1002 for the piece 72.
+2026-04-20 21:12:43: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:43: Peer 1001 received the 'have' message from 1002 for the piece 26.
+2026-04-20 21:12:43: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:43: Peer 1001 received the 'have' message from 1002 for the piece 76.
+2026-04-20 21:12:43: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:43: Peer 1001 received the 'have' message from 1002 for the piece 2.
+2026-04-20 21:12:43: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:43: Peer 1001 received the 'have' message from 1002 for the piece 63.
+2026-04-20 21:12:43: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:43: Peer 1001 received the 'have' message from 1002 for the piece 37.
+2026-04-20 21:12:43: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:43: Peer 1001 received the 'have' message from 1002 for the piece 8.
+2026-04-20 21:12:43: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:43: Peer 1001 received the 'have' message from 1002 for the piece 60.
+2026-04-20 21:12:43: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:43: Peer 1001 received the 'have' message from 1002 for the piece 22.
+2026-04-20 21:12:43: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:43: Peer 1001 received the 'have' message from 1002 for the piece 19.
+2026-04-20 21:12:43: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:43: Peer 1001 received the 'have' message from 1002 for the piece 59.
+2026-04-20 21:12:43: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:43: Peer 1001 received the 'have' message from 1002 for the piece 64.
+2026-04-20 21:12:43: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:43: Peer 1001 received the 'have' message from 1002 for the piece 14.
+2026-04-20 21:12:43: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:43: Peer 1001 received the 'have' message from 1002 for the piece 43.
+2026-04-20 21:12:43: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:43: Peer 1001 received the 'have' message from 1002 for the piece 31.
+2026-04-20 21:12:43: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:43: Peer 1001 received the 'have' message from 1002 for the piece 57.
+2026-04-20 21:12:43: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:43: Peer 1001 received the 'have' message from 1002 for the piece 62.
+2026-04-20 21:12:43: Peer 1001 received the 'interested' message from 1002.
+2026-04-20 21:12:43: Peer 1001 received the 'have' message from 1002 for the piece 71.
+2026-04-20 21:12:43: Peer 1001 received the 'not interested' message from 1002.
+2026-04-20 21:12:46: Peer 1001 has the preferred neighbors .
+2026-04-20 21:12:51: Peer 1001 has the preferred neighbors .
+2026-04-20 21:12:56: Peer 1001 has the preferred neighbors .
+2026-04-20 21:13:01: Peer 1001 has the preferred neighbors .
+2026-04-20 21:13:06: Peer 1001 has the preferred neighbors .
+2026-04-20 21:13:11: Peer 1001 has the preferred neighbors .
+2026-04-20 21:13:16: Peer 1001 has the preferred neighbors .
+2026-04-20 21:13:21: Peer 1001 has the preferred neighbors .
+2026-04-20 21:13:26: Peer 1001 has the preferred neighbors .
+2026-04-20 21:13:31: Peer 1001 has the preferred neighbors .
+2026-04-20 21:13:36: Peer 1001 has the preferred neighbors .
+2026-04-20 21:13:41: Peer 1001 has the preferred neighbors .
+2026-04-20 21:13:46: Peer 1001 has the preferred neighbors .
+2026-04-20 21:13:51: Peer 1001 has the preferred neighbors .
+2026-04-20 21:13:56: Peer 1001 has the preferred neighbors .
+2026-04-20 21:14:01: Peer 1001 has the preferred neighbors .
+2026-04-20 21:14:06: Peer 1001 has the preferred neighbors .
+2026-04-20 21:14:11: Peer 1001 has the preferred neighbors .
+2026-04-20 21:14:16: Peer 1001 has the preferred neighbors .
+2026-04-20 21:14:21: Peer 1001 has the preferred neighbors .
+2026-04-20 21:14:26: Peer 1001 has the preferred neighbors .
+2026-04-20 21:14:31: Peer 1001 has the preferred neighbors .
+2026-04-20 21:14:36: Peer 1001 has the preferred neighbors .
+2026-04-20 21:14:41: Peer 1001 has the preferred neighbors .
+2026-04-20 21:14:46: Peer 1001 has the preferred neighbors .
+2026-04-20 21:14:51: Peer 1001 has the preferred neighbors .
+2026-04-20 21:14:56: Peer 1001 has the preferred neighbors .
+2026-04-20 21:15:01: Peer 1001 has the preferred neighbors .
+2026-04-20 21:15:06: Peer 1001 has the preferred neighbors .
+2026-04-20 21:15:11: Peer 1001 has the preferred neighbors .
+2026-04-20 21:15:16: Peer 1001 has the preferred neighbors .
+2026-04-20 21:15:21: Peer 1001 has the preferred neighbors .
+2026-04-20 21:15:26: Peer 1001 has the preferred neighbors .
+2026-04-20 21:15:31: Peer 1001 has the preferred neighbors .
+2026-04-20 21:15:36: Peer 1001 has the preferred neighbors .
+2026-04-20 21:15:41: Peer 1001 has the preferred neighbors .
+2026-04-20 21:15:46: Peer 1001 has the preferred neighbors .
+2026-04-20 21:15:51: Peer 1001 has the preferred neighbors .
+2026-04-20 21:15:56: Peer 1001 has the preferred neighbors .
+2026-04-20 21:16:01: Peer 1001 has the preferred neighbors .
+2026-04-20 21:16:06: Peer 1001 has the preferred neighbors .
+2026-04-20 21:16:11: Peer 1001 has the preferred neighbors .
+2026-04-20 21:16:16: Peer 1001 has the preferred neighbors .
+2026-04-20 21:16:21: Peer 1001 has the preferred neighbors .
+2026-04-20 21:16:26: Peer 1001 has the preferred neighbors .
+2026-04-20 21:16:31: Peer 1001 has the preferred neighbors .
+2026-04-20 21:16:36: Peer 1001 has the preferred neighbors .
+2026-04-20 21:16:41: Peer 1001 has the preferred neighbors .
+2026-04-20 21:16:46: Peer 1001 has the preferred neighbors .
+2026-04-20 21:16:51: Peer 1001 has the preferred neighbors .
+2026-04-20 21:16:56: Peer 1001 has the preferred neighbors .
+2026-04-20 21:17:01: Peer 1001 has the preferred neighbors .
+2026-04-20 21:17:06: Peer 1001 has the preferred neighbors .
+2026-04-20 21:17:11: Peer 1001 has the preferred neighbors .
+2026-04-20 21:17:16: Peer 1001 has the preferred neighbors .
+2026-04-20 21:17:21: Peer 1001 has the preferred neighbors .
+2026-04-20 21:17:26: Peer 1001 has the preferred neighbors .
+2026-04-20 21:17:31: Peer 1001 has the preferred neighbors .
+2026-04-20 21:17:36: Peer 1001 has the preferred neighbors .
+2026-04-20 21:17:41: Peer 1001 has the preferred neighbors .
+2026-04-20 21:17:46: Peer 1001 has the preferred neighbors .
+2026-04-20 21:17:51: Peer 1001 has the preferred neighbors .
+2026-04-20 21:17:56: Peer 1001 has the preferred neighbors .
+2026-04-20 21:18:01: Peer 1001 has the preferred neighbors .
+2026-04-20 21:18:06: Peer 1001 has the preferred neighbors .
+2026-04-20 21:18:11: Peer 1001 has the preferred neighbors .
+2026-04-20 21:18:16: Peer 1001 has the preferred neighbors .
+2026-04-20 21:18:21: Peer 1001 has the preferred neighbors .
+2026-04-20 21:18:26: Peer 1001 has the preferred neighbors .
+2026-04-20 21:18:31: Peer 1001 has the preferred neighbors .
+2026-04-20 21:18:36: Peer 1001 has the preferred neighbors .
+2026-04-20 21:18:41: Peer 1001 has the preferred neighbors .
+2026-04-20 21:18:46: Peer 1001 has the preferred neighbors .
+2026-04-20 21:18:51: Peer 1001 has the preferred neighbors .
+2026-04-20 21:18:56: Peer 1001 has the preferred neighbors .
+2026-04-20 21:19:01: Peer 1001 has the preferred neighbors .
+2026-04-20 21:19:06: Peer 1001 has the preferred neighbors .
+2026-04-20 21:19:11: Peer 1001 has the preferred neighbors .
+2026-04-20 21:19:16: Peer 1001 has the preferred neighbors .
+2026-04-20 21:19:21: Peer 1001 has the preferred neighbors .
+2026-04-20 21:19:26: Peer 1001 has the preferred neighbors .
+2026-04-20 21:19:31: Peer 1001 has the preferred neighbors .
+2026-04-20 21:19:36: Peer 1001 has the preferred neighbors .
+2026-04-20 21:19:41: Peer 1001 has the preferred neighbors .
+2026-04-20 21:19:46: Peer 1001 has the preferred neighbors .
+2026-04-20 21:19:51: Peer 1001 has the preferred neighbors .
+2026-04-20 21:19:56: Peer 1001 has the preferred neighbors .
+2026-04-20 21:20:01: Peer 1001 has the preferred neighbors .
+2026-04-20 21:20:06: Peer 1001 has the preferred neighbors .
+2026-04-20 21:20:11: Peer 1001 has the preferred neighbors .
+2026-04-20 21:20:16: Peer 1001 has the preferred neighbors .
+2026-04-20 21:20:21: Peer 1001 has the preferred neighbors .
+2026-04-20 21:20:26: Peer 1001 has the preferred neighbors .
+2026-04-20 21:20:31: Peer 1001 has the preferred neighbors .
+2026-04-20 21:20:36: Peer 1001 has the preferred neighbors .
+2026-04-20 21:20:41: Peer 1001 has the preferred neighbors .
+2026-04-20 21:20:46: Peer 1001 has the preferred neighbors .
+2026-04-20 21:20:51: Peer 1001 has the preferred neighbors .
+2026-04-20 21:20:56: Peer 1001 has the preferred neighbors .
+2026-04-20 21:21:01: Peer 1001 has the preferred neighbors .
+2026-04-20 21:21:06: Peer 1001 has the preferred neighbors .
+2026-04-20 21:21:11: Peer 1001 has the preferred neighbors .
+2026-04-20 21:21:16: Peer 1001 has the preferred neighbors .
+2026-04-20 21:21:21: Peer 1001 has the preferred neighbors .
+2026-04-20 21:21:26: Peer 1001 has the preferred neighbors .
+2026-04-20 21:21:31: Peer 1001 has the preferred neighbors .
+2026-04-20 21:21:36: Peer 1001 has the preferred neighbors .
+2026-04-20 21:21:41: Peer 1001 has the preferred neighbors .
+2026-04-20 21:21:46: Peer 1001 has the preferred neighbors .
+2026-04-20 21:21:51: Peer 1001 has the preferred neighbors .
+2026-04-20 21:21:56: Peer 1001 has the preferred neighbors .
+2026-04-20 21:22:01: Peer 1001 has the preferred neighbors .
+2026-04-20 21:22:06: Peer 1001 has the preferred neighbors .
+2026-04-20 21:22:11: Peer 1001 has the preferred neighbors .
+2026-04-20 21:22:16: Peer 1001 has the preferred neighbors .
+2026-04-20 21:22:21: Peer 1001 has the preferred neighbors .
+2026-04-20 21:22:26: Peer 1001 has the preferred neighbors .
+2026-04-20 21:22:31: Peer 1001 has the preferred neighbors .
+2026-04-20 21:22:36: Peer 1001 has the preferred neighbors .
+2026-04-20 21:22:41: Peer 1001 has the preferred neighbors .
+2026-04-20 21:22:46: Peer 1001 has the preferred neighbors .
+2026-04-20 21:22:51: Peer 1001 has the preferred neighbors .
+2026-04-20 21:22:56: Peer 1001 has the preferred neighbors .
+2026-04-20 21:23:01: Peer 1001 has the preferred neighbors .
+2026-04-20 21:23:06: Peer 1001 has the preferred neighbors .
+2026-04-20 21:23:11: Peer 1001 has the preferred neighbors .
+2026-04-20 21:23:16: Peer 1001 has the preferred neighbors .
+2026-04-20 21:23:21: Peer 1001 has the preferred neighbors .
+2026-04-20 21:23:26: Peer 1001 has the preferred neighbors .
+2026-04-20 21:23:31: Peer 1001 has the preferred neighbors .
+2026-04-20 21:23:36: Peer 1001 has the preferred neighbors .
+2026-04-20 21:23:41: Peer 1001 has the preferred neighbors .
+2026-04-20 21:23:46: Peer 1001 has the preferred neighbors .
+2026-04-20 21:23:51: Peer 1001 has the preferred neighbors .
+2026-04-20 21:23:56: Peer 1001 has the preferred neighbors .
+2026-04-20 21:24:01: Peer 1001 has the preferred neighbors .
+2026-04-20 21:24:06: Peer 1001 has the preferred neighbors .
+2026-04-20 21:24:11: Peer 1001 has the preferred neighbors .
+2026-04-20 21:24:16: Peer 1001 has the preferred neighbors .
+2026-04-20 21:24:21: Peer 1001 has the preferred neighbors .
+2026-04-20 21:24:26: Peer 1001 has the preferred neighbors .
+2026-04-20 21:24:31: Peer 1001 has the preferred neighbors .
+2026-04-20 21:24:36: Peer 1001 has the preferred neighbors .
+2026-04-20 21:24:41: Peer 1001 has the preferred neighbors .
+2026-04-20 21:24:46: Peer 1001 has the preferred neighbors .
+2026-04-20 21:24:51: Peer 1001 has the preferred neighbors .
+2026-04-20 21:24:56: Peer 1001 has the preferred neighbors .
+2026-04-20 21:25:01: Peer 1001 has the preferred neighbors .
+2026-04-20 21:25:06: Peer 1001 has the preferred neighbors .
+2026-04-20 21:25:11: Peer 1001 has the preferred neighbors .
+2026-04-20 21:25:16: Peer 1001 has the preferred neighbors .
+2026-04-20 21:25:21: Peer 1001 has the preferred neighbors .
+2026-04-20 21:25:26: Peer 1001 has the preferred neighbors .
+2026-04-20 21:25:31: Peer 1001 has the preferred neighbors .
+2026-04-20 21:25:36: Peer 1001 has the preferred neighbors .
+2026-04-20 21:25:41: Peer 1001 has the preferred neighbors .
+2026-04-20 21:25:46: Peer 1001 has the preferred neighbors .
+2026-04-20 21:25:51: Peer 1001 has the preferred neighbors .
+2026-04-20 21:25:56: Peer 1001 has the preferred neighbors .
+2026-04-20 21:26:01: Peer 1001 has the preferred neighbors .
+2026-04-20 21:26:06: Peer 1001 has the preferred neighbors .
+2026-04-20 21:26:11: Peer 1001 has the preferred neighbors .
+2026-04-20 21:26:16: Peer 1001 has the preferred neighbors .
+2026-04-20 21:26:21: Peer 1001 has the preferred neighbors .
+2026-04-20 21:26:26: Peer 1001 has the preferred neighbors .
+2026-04-20 21:26:31: Peer 1001 has the preferred neighbors .
+2026-04-20 21:26:36: Peer 1001 has the preferred neighbors .
+2026-04-20 21:26:41: Peer 1001 has the preferred neighbors .
+2026-04-20 21:26:46: Peer 1001 has the preferred neighbors .
+2026-04-20 21:26:51: Peer 1001 has the preferred neighbors .
+2026-04-20 21:26:56: Peer 1001 has the preferred neighbors .
+2026-04-20 21:27:01: Peer 1001 has the preferred neighbors .
+2026-04-20 21:27:06: Peer 1001 has the preferred neighbors .
+2026-04-20 21:27:11: Peer 1001 has the preferred neighbors .
+2026-04-20 21:27:16: Peer 1001 has the preferred neighbors .
+2026-04-20 21:27:21: Peer 1001 has the preferred neighbors .
+2026-04-20 21:27:26: Peer 1001 has the preferred neighbors .
+2026-04-20 21:27:31: Peer 1001 has the preferred neighbors .
+2026-04-20 21:27:36: Peer 1001 has the preferred neighbors .
+2026-04-20 21:27:41: Peer 1001 has the preferred neighbors .
+2026-04-20 21:27:46: Peer 1001 has the preferred neighbors .
+2026-04-20 21:27:51: Peer 1001 has the preferred neighbors .
+2026-04-20 21:27:56: Peer 1001 has the preferred neighbors .
+2026-04-20 21:28:01: Peer 1001 has the preferred neighbors .
+2026-04-20 21:28:06: Peer 1001 has the preferred neighbors .
+2026-04-20 21:28:11: Peer 1001 has the preferred neighbors .
+2026-04-20 21:28:16: Peer 1001 has the preferred neighbors .
+2026-04-20 21:28:21: Peer 1001 has the preferred neighbors .
+2026-04-20 21:28:26: Peer 1001 has the preferred neighbors .
+2026-04-20 21:28:31: Peer 1001 has the preferred neighbors .
+2026-04-20 21:28:36: Peer 1001 has the preferred neighbors .
+2026-04-20 21:28:41: Peer 1001 has the preferred neighbors .
+2026-04-20 21:28:46: Peer 1001 has the preferred neighbors .
+2026-04-20 21:28:51: Peer 1001 has the preferred neighbors .
+2026-04-20 21:28:56: Peer 1001 has the preferred neighbors .
+2026-04-20 21:29:01: Peer 1001 has the preferred neighbors .
+2026-04-20 21:29:06: Peer 1001 has the preferred neighbors .
+2026-04-20 21:29:11: Peer 1001 has the preferred neighbors .
+2026-04-20 21:29:16: Peer 1001 has the preferred neighbors .
+2026-04-20 21:29:21: Peer 1001 has the preferred neighbors .
+2026-04-20 21:29:26: Peer 1001 has the preferred neighbors .
+2026-04-20 21:29:31: Peer 1001 has the preferred neighbors .
+2026-04-20 21:29:36: Peer 1001 has the preferred neighbors .
+2026-04-20 21:29:41: Peer 1001 has the preferred neighbors .
+2026-04-20 21:29:46: Peer 1001 has the preferred neighbors .
