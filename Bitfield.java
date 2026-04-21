@@ -25,6 +25,15 @@ public class Bitfield {
         return true;
     }
 
+    /** Number of pieces marked present (for termination / peer progress). */
+    public int countTruePieces() {
+        int c = 0;
+        for (boolean p : pieces) {
+            if (p) c++;
+        }
+        return c;
+    }
+
     public boolean isInterested(Bitfield neighbor) {
         for (int i = 0; i < pieces.length; i++) {
             if (neighbor.hasPiece(i) && !this.hasPiece(i)) {
